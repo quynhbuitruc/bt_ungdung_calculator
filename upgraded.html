@@ -1,53 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bàn tính cao cấp</title>
+    <style>
+        tr,
+        td {
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            width: 60px;
+            height: 20px;
+            padding: 10px;
+            border: lightslategrey 1px solid;
+        }
+    </style>
 </head>
+
 <body>
     <table>
         <tr>
-            <th id = "hienthi" style = "text-align: right;" colspan="4"></th>
+            <th id="hienthi" style="text-align: right;" colspan="4"></th>
         </tr>
         <tr>
-            <td>
-                <input type="button" value="(">
-            </td>
-            <td>
-                <input type="button" value=")">
-            </td>
-            <td>
-                <input type="button" value="%">
-            </td>
-            <td>
-                <input type="button" value="AC">
-            </td>
+            <td style="background-color: rosybrown; color: white">(</td>
+            <td style="background-color: rosybrown; color: white">)</td>
+            <td style="background-color: rosybrown; color: white">%</td>
+            <td style="background-color: rosybrown; color: white">AC</td>
         </tr>
         <tr>
-            <td><input type="button" value="1"></td>
-            <td><input type="button" value="2"></td>
-            <td><input type="button" value="3"></td>
-            <td><input type="button" value="+"></td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td style="background-color: rosybrown; color: white">+</td>
         </tr>
         <tr>
-            <td><input type="button" value="4"></td>
-            <td><input type="button" value="5"></td>
-            <td><input type="button" value="6"></td>
-            <td><input type="button" value="-"></td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td style="background-color: rosybrown; color: white">-</td>
         </tr>
         <tr>
-            <td><input type="button" value="7"></td>
-            <td><input type="button" value="8"></td>
-            <td><input type="button" value="9"></td>
-            <td><input type="button" value="*"></td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td style="background-color: rosybrown; color: white">*</td>
         </tr>
         <tr>
-            <td><input type="button" value="0"></td>
-            <td><input type="button" value="."></td>
-            <td><input type="button" value="="></td>
-            <td><input type="button" value="/"></td>
+            <td>0</td>
+            <td>.</td>
+            <td style="background-color: royalblue; color: white; font-size: large;">=</td>
+            <td style="background-color: rosybrown; color: white">/</td>
         </tr>
     </table>
 </body>
+
 </html>
