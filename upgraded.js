@@ -79,3 +79,9 @@ function division() {
     let thuong = x / y;
     document.getElementById("hienthi").innerText = "Result division :" + " " + thuong;
 }
+function equal() {
+    document.getElementById("hienthi2").innerText = hienthi1
+    document.getElementById("phatngon2").innerText = phatngon1
+    document.getElementById("so1").value = phatngon1
+    document.getElementById("so2").focus();
+    document.getElementById("so2").value = ""
