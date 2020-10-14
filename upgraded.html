@@ -21,39 +21,41 @@
 <body>
     <table>
         <tr>
-            <th id="hienthi" style="text-align: right;" colspan="4"></th>
+            <th onclick="hienthi()" id="hienthi" style="text-align: right;" colspan="4"></th>
         </tr>
         <tr>
-            <td style="background-color: rosybrown; color: white">(</td>
-            <td style="background-color: rosybrown; color: white">)</td>
-            <td style="background-color: rosybrown; color: white">%</td>
-            <td style="background-color: rosybrown; color: white">AC</td>
+            <td onclick="hienthi()" id="(" style="background-color: rosybrown; color: white">(</td>
+            <td onclick="hienthi()" id=")" style="background-color: rosybrown; color: white">)</td>
+            <td onclick="hienthi()" id="%" style="background-color: rosybrown; color: white">%</td>
+            <td onclick="hienthi()" id="AC" style="background-color: rosybrown; color: white">AC</td>
         </tr>
         <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td style="background-color: rosybrown; color: white">+</td>
+            <td onclick="hienthi()" id="1">1</td>
+            <td onclick="hienthi()" id="2">2</td>
+            <td onclick="hienthi()" id="3">3</td>
+            <td onclick="addition()" id="+" style="background-color: rosybrown; color: white">+</td>
         </tr>
         <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td style="background-color: rosybrown; color: white">-</td>
+            <td onclick="hienthi()" id="4">4</td>
+            <td onclick="hienthi()" id="5">5</td>
+            <td onclick="hienthi()" id="6">6</td>
+            <td onclick="subtraction()" id="-" style="background-color: rosybrown; color: white">-</td>
         </tr>
         <tr>
-            <td>7</td>
-            <td>8</td>
-            <td>9</td>
-            <td style="background-color: rosybrown; color: white">*</td>
+            <td onclick="hienthi()" id="7">7</td>
+            <td onclick="hienthi()" id="8">8</td>
+            <td onclick="hienthi()" id="9">9</td>
+            <td onclick="multiplication()" id="*" style="background-color: rosybrown; color: white">*</td>
         </tr>
         <tr>
-            <td>0</td>
-            <td>.</td>
-            <td style="background-color: royalblue; color: white; font-size: large;">=</td>
-            <td style="background-color: rosybrown; color: white">/</td>
+            <td onclick="hienthi()" id="0">0</td>
+            <td onclick="hienthi()" id=".">.</td>
+            <td onclick="hienthi()" id="=" style="background-color: royalblue; color: white; font-size: large;">=</td>
+            <td onclick="division()" id="/" style="background-color: rosybrown; color: white">/</td>
         </tr>
     </table>
+
+    <script src="upgraded.js"></script>
 </body>
 
 </html>
