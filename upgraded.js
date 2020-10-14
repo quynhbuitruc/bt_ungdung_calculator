@@ -44,17 +44,17 @@ document.getElementById(".").addEventListener("click", function () {
 })
 
 document.getElementById("+").addEventListener("click", function() {
-    document.getElementById("pheptoan").value = "+"
+    document.getElementById("pheptinh").value = "+"
 })
 
 document.getElementById("-").addEventListener("click", function() {
-    document.getElementById("pheptoan").value = "-"
+    document.getElementById("pheptinh").value = "-"
 })
 
 document.getElementById("*").addEventListener("click", function() {
-    document.getElementById("pheptoan").value = "*"
+    document.getElementById("pheptinh").value = "*"
 })
 
 document.getElementById("/").addEventListener("click", function() {
-    document.getElementById("pheptoan").value = "/"
+    document.getElementById("pheptinh"). = "/"
 })
