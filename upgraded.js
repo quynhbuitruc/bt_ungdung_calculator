@@ -55,6 +55,26 @@ function division() {
     let thuong = x / y;
     document.getElementById("hienthi").innerText = "Result division :" + " " + thuong;
 }
+function hienthiDau() {
+    document.getElementById("(").addEventListener("click", function () {
+        document.getElementById("so1").innerText = "("
+    })
+    document.getElementById(")").addEventListener("click", function () {
+        document.getElementById("so1").innerText = ")"
+    })
+    document.getElementById("+").addEventListener("click", function () {
+        document.getElementById("pheptinh").innerText = "+"
+    })
+    document.getElementById("-").addEventListener("click", function () {
+        document.getElementById("pheptinh").innerText = "-"
+    })
+    document.getElementById("*").addEventListener("click", function () {
+        document.getElementById("pheptinh").innerText = "*"
+    })
+    document.getElementById("/").addEventListener("click", function () {
+        document.getElementById("pheptinh").innerText = "/"
+    })
+}
 
 function tinhtoan() {
     let x = Number(document.getElementById("so1").innerText)
