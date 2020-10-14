@@ -43,6 +43,10 @@ document.getElementById(".").addEventListener("click", function () {
     document.getElementById("hienthi").innerText = document.getElementById("hienthi").innerText + "."
 })
 
+document.getElementById("AC").addEventListener("click", function () {
+    document.getElementById("hienthi").innerText = "0"
+})
+
 document.getElementById("+").addEventListener("click", Tong)
 
 function Tong() {
@@ -50,15 +54,42 @@ function Tong() {
     document.getElementById("hienthi").innerText = ""
     document.getElementById("=").addEventListener("click", KetquaCong)
     document.getElementById("=").removeEventListener("click", KetquaTru)
+    document.getElementById("=").removeEventListener("click", KetquaNhan)
+    document.getElementById("=").removeEventListener("click", KetquaChia)
 }    
 
 document.getElementById("-").addEventListener("click", Hieu)
 
 function Hieu() {
     document.getElementById("temp").innerText = document.getElementById("hienthi").innerText
-    document.getElementById("hienthi").innerText = ""    
+    document.getElementById("hienthi").innerText = ""
+    document.getElementById("=").addEventListener("click", KetquaTru)
+    document.getElementById("=").removeEventListener("click", KetquaCong)
+    document.getElementById("=").removeEventListener("click", KetquaNhan)
+    document.getElementById("=").removeEventListener("click", KetquaChia)
 }
 
+document.getElementById("*").addEventListener("click", Tich)
+
+function Tich() {
+    document.getElementById("temp").innerText = document.getElementById("hienthi").innerText
+    document.getElementById("hienthi").innerText = ""
+    document.getElementById("=").addEventListener("click", KetquaNhan)
+    document.getElementById("=").removeEventListener("click", KetquaCong)
+    document.getElementById("=").removeEventListener("click", KetquaTru)
+    document.getElementById("=").removeEventListener("click", KetquaChia)
+}
+
+document.getElementById("/").addEventListener("click", Thuong)
+
+function Thuong() {
+    document.getElementById("temp").innerText = document.getElementById("hienthi").innerText
+    document.getElementById("hienthi").innerText = ""
+    document.getElementById("=").addEventListener("click", KetquaChia)
+    document.getElementById("=").removeEventListener("click", KetquaCong)
+    document.getElementById("=").removeEventListener("click", KetquaTru)
+    document.getElementById("=").removeEventListener("click", KetquaNhan)
+}
 function KetquaCong() {
     let A = document.getElementById("temp").innerText
     let kqCong = Number(A) + Number(document.getElementById("hienthi").innerText)
@@ -79,6 +110,6 @@ function KetquaNhan() {
 
 function KetquaChia() {
     let A = document.getElementById("temp").innerText
-    let kqChia = Number(A) + Number(document.getElementById("hienthi").innerText)
+    let kqChia = Number(A) / Number(document.getElementById("hienthi").innerText)
     document.getElementById("hienthi").innerText = kqChia
 }
