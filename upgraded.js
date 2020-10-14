@@ -56,5 +56,5 @@ document.getElementById("*").addEventListener("click", function() {
 })
 
 document.getElementById("/").addEventListener("click", function() {
-    document.getElementById("pheptinh"). = "/"
+    document.getElementById("pheptinh").value = "/"
 })
