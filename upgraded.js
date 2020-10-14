@@ -43,47 +43,42 @@ document.getElementById(".").addEventListener("click", function () {
     document.getElementById("hienthi").innerText = document.getElementById("hienthi").innerText + "."
 })
 
+document.getElementById("+").addEventListener("click", Tong)
+
 function Tong() {
     document.getElementById("temp").innerText = document.getElementById("hienthi").innerText
     document.getElementById("hienthi").innerText = ""
-}
+    document.getElementById("=").addEventListener("click", KetquaCong)
+    document.getElementById("=").removeEventListener("click", KetquaTru)
+}    
+
+document.getElementById("-").addEventListener("click", Hieu)
 
 function Hieu() {
     document.getElementById("temp").innerText = document.getElementById("hienthi").innerText
-    document.getElementById("hienthi").innerText = ""
+    document.getElementById("hienthi").innerText = ""    
 }
 
-function Tich() {
-    document.getElementById("temp").innerText = document.getElementById("hienthi").innerText
-    document.getElementById("hienthi").innerText = ""
-}
-
-function Thuong() {
-    document.getElementById("temp").innerText = document.getElementById("hienthi").innerText
-    document.getElementById("hienthi").innerText = ""
-}
-
-}
 function KetquaCong() {
-    let x = document.getElementById("hienthi").innerText;
-    let Tong = Number(document.getElementById("temp").innerText) + Number(x);
-    document.getElementById("hienthi").innerText = Tong;
+    let A = document.getElementById("temp").innerText
+    let kqCong = Number(A) + Number(document.getElementById("hienthi").innerText)
+    document.getElementById("hienthi").innerText = kqCong
 }
 
 function KetquaTru() {
-    let x = document.getElementById("hienthi").innerText;
-    let Tru = Number(document.getElementById("temp").innerText) - Number(x);
-    document.getElementById("hienthi").innerText = Tru;
+    let A = document.getElementById("temp").innerText
+    let kqTru = Number(A) - Number(document.getElementById("hienthi").innerText)
+    document.getElementById("hienthi").innerText = kqTru
 }
 
 function KetquaNhan() {
-    let x = document.getElementById("hienthi").innerText;
-    let Tich = Number(document.getElementById("temp").innerText) + Number(x);
-    document.getElementById("hienthi").innerText = Tich;
+    let A = document.getElementById("temp").innerText
+    let kqNhan = Number(A) * Number(document.getElementById("hienthi").innerText)
+    document.getElementById("hienthi").innerText = kqNhan
 }
 
 function KetquaChia() {
-    let x = document.getElementById("hienthi").innerText;
-    let Thuong = Number(document.getElementById("temp").innerText) + Number(x);
-    document.getElementById("hienthi").innerText = Thuong;
+    let A = document.getElementById("temp").innerText
+    let kqChia = Number(A) + Number(document.getElementById("hienthi").innerText)
+    document.getElementById("hienthi").innerText = kqChia
 }
