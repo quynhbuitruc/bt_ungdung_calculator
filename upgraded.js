@@ -35,14 +35,14 @@ function hienthi() {
     document.getElementById(")").addEventListener("click", function () {
         document.getElementById("hienthi").innerText = ")"
     })
-    document.getElementById("9").addEventListener("click", function () {
+    document.getElementById("%").addEventListener("click", function () {
         document.getElementById("hienthi").innerText = "%"
     })
     document.getElementById("AC").addEventListener("click", function () {
         document.getElementById("hienthi").innerText = 0
     })
-    document.getElementById("9").addEventListener("click", function () {
-        document.getElementById("hienthi").innerText = "9"
+    document.getElementById(".").addEventListener("click", function () {
+        document.getElementById("hienthi").innerText = "."
     })
     document.getElementById("+").addEventListener("click", function () {
         document.getElementById("hienthi").innerText = "+"
@@ -56,6 +56,9 @@ function hienthi() {
     document.getElementById("/").addEventListener("click", function () {
         document.getElementById("hienthi").innerText = "/"
     })
+}
+function hienthikq() {
+    document.getElementById("hienthiKQ").innerText = 1
 }
 function addition() {
     let tong = x + y;
