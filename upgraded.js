@@ -1,64 +1,40 @@
-function hienthi() {
+function hienthiso() {
     document.getElementById("0").addEventListener("click", function () {
-        document.getElementById("hienthi").innerText = "0"
-    })
+        document.getElementById("so1").innerText = document.getElementById("1").innerText;
+    }) 
     document.getElementById("1").addEventListener("click", function () {
-        document.getElementById("hienthi").innerText = "1"
+        document.getElementById("so1").innerText = "1"
     })
     document.getElementById("2").addEventListener("click", function () {
-        document.getElementById("hienthi").innerText = "2"
+        document.getElementById("so1").innerText = "2"
     })
     document.getElementById("3").addEventListener("click", function () {
-        document.getElementById("hienthi").innerText = "3"
+        document.getElementById("so1").innerText = "3"
     })
     document.getElementById("4").addEventListener("click", function () {
-        document.getElementById("hienthi").innerText = "4"
+        document.getElementById("so1").innerText = "4"
     })
     document.getElementById("5").addEventListener("click", function () {
-        document.getElementById("hienthi").innerText = "5"
+        document.getElementById("so1").innerText = "5"
     })
     document.getElementById("6").addEventListener("click", function () {
-        document.getElementById("hienthi").innerText = "6"
+        document.getElementById("so1").innerText = "6"
     })
     document.getElementById("7").addEventListener("click", function () {
-        document.getElementById("hienthi").innerText = "7"
+        document.getElementById("so1").innerText = "7"
     })
     document.getElementById("8").addEventListener("click", function () {
-        document.getElementById("hienthi").innerText = "8"
+        document.getElementById("so1").innerText = "8"
     })
     document.getElementById("9").addEventListener("click", function () {
-        document.getElementById("hienthi").innerText = "9"
-    })
-    document.getElementById("(").addEventListener("click", function () {
-        document.getElementById("hienthi").innerText = "("
-    })
-    document.getElementById(")").addEventListener("click", function () {
-        document.getElementById("hienthi").innerText = ")"
-    })
-    document.getElementById("%").addEventListener("click", function () {
-        document.getElementById("hienthi").innerText = "%"
-    })
-    document.getElementById("AC").addEventListener("click", function () {
-        document.getElementById("hienthi").innerText = 0
+        document.getElementById("so1").innerText = "9"
     })
     document.getElementById(".").addEventListener("click", function () {
-        document.getElementById("hienthi").innerText = "."
-    })
-    document.getElementById("+").addEventListener("click", function () {
-        document.getElementById("hienthi").innerText = "+"
-    })
-    document.getElementById("-").addEventListener("click", function () {
-        document.getElementById("hienthi").innerText = "-"
-    })
-    document.getElementById("*").addEventListener("click", function () {
-        document.getElementById("hienthi").innerText = "*"
-    })
-    document.getElementById("/").addEventListener("click", function () {
-        document.getElementById("hienthi").innerText = "/"
+        document.getElementById("so1").innerText = "."
     })
 }
-function hienthikq() {
-    document.getElementById("hienthiKQ").innerText = 1
+function hienthiKQ() {
+    document.getElementById("hienthi").innerText = document.getElementById("hienthiKQ").innerText
 }
 function addition() {
     let tong = x + y;
@@ -79,9 +55,14 @@ function division() {
     let thuong = x / y;
     document.getElementById("hienthi").innerText = "Result division :" + " " + thuong;
 }
-function equal() {
-    document.getElementById("hienthi2").innerText = hienthi1
-    document.getElementById("phatngon2").innerText = phatngon1
-    document.getElementById("so1").value = phatngon1
+
+function tinhtoan() {
+    let x = Number(document.getElementById("so1").innerText)
+    let y = Number(document.getElementById("so2").innerText)
+    let z = document.getElementById("pheptinh").innerText
+    document.getElementById("hienthiND").innerText = x + z + y
+    document.getElementById("pheptinh").focus();
+    document.getElementById("pheptinh").value = ""
     document.getElementById("so2").focus();
     document.getElementById("so2").value = ""
+}
